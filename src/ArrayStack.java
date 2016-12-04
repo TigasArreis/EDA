@@ -1,13 +1,13 @@
 
 public class ArrayStack <E> implements Stack<E> {
 
-	public static int CAPACITY;
+	public static int CAPACITY =100;
 	private int t = -1;
 	private E[] data;
 	
 	
 	public ArrayStack() {
-		CAPACITY = 100;
+		this(CAPACITY);
 	}
 	public ArrayStack( int capacity){
 		data = (E[]) new Object[capacity];
